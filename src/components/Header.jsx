@@ -60,7 +60,7 @@ const Header = () => {
                 : isPending
                   ? "pending"
                   : ("text-black")
-            } to="/profile">User Profile</NavLink></li>
+            } to="/user">User Profile</NavLink></li>
 {/* 
            {
             !user ? <div>

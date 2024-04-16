@@ -50,6 +50,7 @@ const Details = () => {
                     <p className="mt-0 text-gray-600">{estate.segment_name}</p>
                     <p className="text-xl text-bold text-blue-800">{estate.price}</p>
                     <p className="text-purple-400 text-lg">{estate.location}</p>
+                    <p className="font-bold text-lg text-orange-900">{estate.facilities.join(", ")}</p>
                     <p>{estate.area}</p>
 
                     <p className="text-sm text gray 800">{estate.description}</p>

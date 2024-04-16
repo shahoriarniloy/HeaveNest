@@ -19,7 +19,7 @@ const Profile = () => {
 
   return (
     <div className="max-w-[1400px] m-auto">
-      <h1 className="text-center text-4xl text-purple-900 font-bold">Profile</h1>
+      <h1 className="text-center text-4xl text-purple-900 ">Profile</h1>
       <form onSubmit={handleSaveChanges}>
       <label className="form-control">
             <div className="label">
