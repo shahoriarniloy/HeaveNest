@@ -4,17 +4,23 @@ import { useContext, useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
+import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 const Register = () => {
 
-    const {createUser} =useContext(AuthContext);
+    const location = useLocation();
+
+    const navigate = useNavigate();
+
+    const {createUser, updateUserProfile} =useContext(AuthContext);
     const [registerError, setRegisterError]= useState('');
     const [showPassword, setShowPassword]= useState(false);
     const handleRegister = e => {
         e.preventDefault();
-        const name=e.target.name.value;
-        const email=e.target.email.value;
-        const url=e.target.url.value;
-        const password=e.target.password.value;
+        const name = e.target.name.value;
+        const email = e.target.email.value;
+        const url = e.target.url.value;
+        const password = e.target.password.value;
 
        
         console.log(email, password, name, url);
@@ -36,13 +42,15 @@ const Register = () => {
         }
         setRegisterError('');
         createUserWithEmailAndPassword(auth,email,password)
-        .then(result=>{
+        .then(result => {
             console.log(result.user);
+            updateUserProfile(name, url); // Passing name and url to updateUserProfile
+            navigate(location?.state ? location.state : '/');
         })
-        .catch(error=>{
+        .catch(error => {
             console.error(error);
             setRegisterError(error.message);
-        })
+        });
 
         // createUser(email,password)
         // .then(result=>{

@@ -27,6 +27,8 @@ const router = createBrowserRouter([
         loader:() => fetch('/data.json').then(response => response.json())
 
       },
+
+     
       {
         path:'/login',
         element: <PublicRoutes><Login></Login></PublicRoutes>

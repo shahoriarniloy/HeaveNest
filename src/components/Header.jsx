@@ -84,9 +84,10 @@ const Header = () => {
               <div className='flex justify-center items-center'>
                
         
-               <div className="tooltip tooltip-bottom" data-tip={user.email}>
+               <div className="tooltip tooltip-bottom" data-tip={user.displayName}>
                   <div className="w-10 rounded-full " >
-                    <img className="rounded-full" alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                    <img className="rounded-full" alt="Tailwind CSS Navbar component" src={user? user.photoURL:  "https://static-00.iconduck.com/assets.00/profile-circle-icon-2048x2048-cqe5466q.png"}
+ />
                  </div>
                 </div>
                 <a className='btn btn-sm bg-white border-0' onClick={handleLogOut}>Logout</a>
