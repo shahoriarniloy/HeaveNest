@@ -102,7 +102,7 @@
         "area": "2800 sq ft",
         "location": "Brooklyn, New York",
         "facilities": ["4 Bedrooms", "Original Details", "Gourmet Kitchen", "Private Garden"],
-        "image":"./images/8.jpeg"
+        "image":"./images/8.jpg"
 
       },
       {
@@ -115,7 +115,7 @@
         "area": "3200 sq ft",
         "location": "Scottsdale, Arizona",
         "facilities": ["4 Bedrooms", "Large Yard", "Home Office", "Outdoor Kitchen"],
-        "image":"./images/9.jpeg"
+        "image":"./images/9.jpg"
 
       }
     
