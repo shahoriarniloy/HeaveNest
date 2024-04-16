@@ -1,0 +1,104 @@
+{
+    "Residential": [
+      {
+        "id": 1,
+        "estate_title": "Luxury Villa with Ocean View",
+        "segment_name": "Residential",
+        "description": "Modern luxury villa with stunning ocean views, located in a prestigious neighborhood.",
+        "price": "$2,500,000",
+        "status": "sale",
+        "area": "4000 sq ft",
+        "location": "Malibu, California",
+        "facilities": ["5 Bedrooms", "Infinity Pool", "Home Theater", "Gym"]
+      },
+      {
+        "id": 2,
+        "estate_title": "Cozy Beachfront Cottage",
+        "segment_name": "Residential",
+        "description": "Charming cottage with direct access to a secluded beach, perfect for a peaceful retreat.",
+        "price": "$800,000",
+        "status": "rent",
+        "area": "1200 sq ft",
+        "location": "Outer Banks, North Carolina",
+        "facilities": ["2 Bedrooms", "Oceanfront Deck", "Fireplace", "Outdoor Shower"]
+      },
+      {
+        "id": 3,
+        "estate_title": "Urban Loft in the Heart of the City",
+        "segment_name": "Residential",
+        "description": "Sleek and spacious loft apartment offering modern urban living in a vibrant neighborhood.",
+        "price": "$1,200,000",
+        "status": "sale",
+        "area": "1800 sq ft",
+        "location": "Downtown Manhattan, New York",
+        "facilities": ["Open Floor Plan", "City Views", "High Ceilings", "Fitness Center"]
+      },
+      {
+        "id": 4,
+        "estate_title": "Family Home with Private Garden",
+        "segment_name": "Residential",
+        "description": "Comfortable family home with a large backyard garden, ideal for outdoor gatherings and play.",
+        "price": "$600,000",
+        "status": "rent",
+        "area": "2500 sq ft",
+        "location": "Austin, Texas",
+        "facilities": ["3 Bedrooms", "Spacious Kitchen", "Playroom", "Patio"]
+      },
+      {
+        "id": 5,
+        "estate_title": "Mountain Retreat Cabin",
+        "segment_name": "Residential",
+        "description": "Quaint cabin nestled in the mountains, offering serene views and a cozy atmosphere.",
+        "price": "$400,000",
+        "status": "sale",
+        "area": "1500 sq ft",
+        "location": "Aspen, Colorado",
+        "facilities": ["2 Bedrooms", "Wood-burning Fireplace", "Deck", "Hiking Trails Nearby"]
+      },
+      {
+        "id": 6,
+        "estate_title": "Luxury Condo with Panoramic City Views",
+        "segment_name": "Residential",
+        "description": "High-end condominium with breathtaking cityscape views, featuring luxurious amenities.",
+        "price": "$1,800,000",
+        "status": "sale",
+        "area": "2200 sq ft",
+        "location": "San Francisco, California",
+        "facilities": ["3 Bedrooms", "Rooftop Pool", "Concierge Service", "Private Balcony"]
+      },
+      {
+        "id": 7,
+        "estate_title": "Riverside Retreat Estate",
+        "segment_name": "Residential",
+        "description": "Elegant estate nestled along a tranquil river, offering privacy and natural beauty.",
+        "price": "$3,000,000",
+        "status": "rent",
+        "area": "6000 sq ft",
+        "location": "Savannah, Georgia",
+        "facilities": ["5 Bedrooms", "Boat Dock", "Home Office", "Gardens"]
+      },
+      {
+        "id": 8,
+        "estate_title": "Historic Brownstone Townhouse",
+        "segment_name": "Residential",
+        "description": "Beautifully restored historic townhouse with classic charm and modern comforts.",
+        "price": "$1,500,000",
+        "status": "sale",
+        "area": "2800 sq ft",
+        "location": "Brooklyn, New York",
+        "facilities": ["4 Bedrooms", "Original Details", "Gourmet Kitchen", "Private Garden"]
+      },
+      {
+        "id": 9,
+        "estate_title": "Contemporary Suburban Home",
+        "segment_name": "Residential",
+        "description": "Stylish and spacious home in a quiet suburban neighborhood, perfect for family living.",
+        "price": "$900,000",
+        "status": "rent",
+        "area": "3200 sq ft",
+        "location": "Scottsdale, Arizona",
+        "facilities": ["4 Bedrooms", "Large Yard", "Home Office", "Outdoor Kitchen"]
+      }
+    ]
+  }
+  
