@@ -18,28 +18,32 @@ const Profile = () => {
   };
 
   return (
-    <div>
-      <h1>Profile</h1>
+    <div className="max-w-[1400px] m-auto">
+      <h1 className="text-center text-4xl text-purple-900 font-bold">Profile</h1>
       <form onSubmit={handleSaveChanges}>
-        <label>
-          Name:
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
+      <label className="form-control">
+            <div className="label">
+                <span className="label-text">Name</span>
+            </div>
+            <input type="text" value={name}
+            onChange={(e) => setName(e.target.value)}  className="input input-bordered" />
         </label>
-        <br />
-        <label>
-          Photo URL:
-          <input
-            type="text"
-            value={photoURL}
-            onChange={(e) => setPhotoURL(e.target.value)}
-          />
+
+        <label className="form-control">
+            <div className="label">
+                <span className="label-text">Picture URL</span>
+            </div>
+            <input type="text" value={photoURL}
+            onChange={(e) => setPhotoURL(e.target.value)}  className="input input-bordered" />
         </label>
-        <br />
-        <button type="submit">Save Changes</button>
+
+
+
+
+        
+        
+      
+        <button className="btn btn-success mt-4 w-64 p-0 " type="submit">Save Changes</button>
       </form>
     </div>
   );

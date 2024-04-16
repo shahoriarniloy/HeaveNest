@@ -2,9 +2,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/bundle';
 import 'swiper/css/pagination';
+import 'animate.css';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { useLoaderData } from 'react-router-dom';
 import Estate from '../Estate/Estate';
+
+
 
 
 const Home = () => {
@@ -57,6 +60,8 @@ Unlock the door to divine living with HeavensNest, where every home is a sanctua
                
             
            </Swiper>
+
+           <h1 className='text-6xl text-purple-900 text-center  lg:mt-12 mt-8'>Our Residents</h1>
 
            <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4'>
             {
