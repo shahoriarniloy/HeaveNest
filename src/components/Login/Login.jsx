@@ -1,12 +1,14 @@
 import { GoogleAuthProvider, GithubAuthProvider, signInWithPopup, signOut, signInWithEmailAndPassword } from "firebase/auth";
 import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
 import auth from "../../firebase/firebase.init";
 import { AuthContext } from "../providers/AuthProvider";
 import { useContext } from "react";
 
 const Login = () => {
+
+    const location = useLocation();
 
     const {signInUser} = useContext(AuthContext);
     const navigate = useNavigate();
@@ -22,7 +24,7 @@ const Login = () => {
         .then(result =>{
             console.log(result.user);
             e.target.reset();
-            navigate('/');
+            navigate(location?.state?location.state:'/');
         })
         .catch(error=> console.error(error))
 
@@ -40,7 +42,7 @@ const Login = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 const loggedInUser = result.user;
-                navigate('/');
+                navigate(location?.state?location.state:'/');
 
                 
                 setUser(loggedInUser);
@@ -65,7 +67,7 @@ const Login = () => {
         signInWithPopup(auth, githubProvider)
             .then(result => {
                 const loggedUser = result.user;
-                navigate('/');
+                navigate(location?.state?location.state:'/');
 
                 setUser(loggedUser);
             })

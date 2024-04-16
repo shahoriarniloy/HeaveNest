@@ -32,7 +32,7 @@ const Header = () => {
               <li><a>Item 3</a></li>
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Heaven's Nest</a>
+          <a className="btn btn-ghost text-xl text-purple-500 font-bold">Heaven's Nest</a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
@@ -44,13 +44,6 @@ const Header = () => {
                   : ("text-black")
             } to="/">Home</NavLink></li>
 
-<li><NavLink className={({ isActive, isPending }) =>
-              isActive
-                ? ("text-green-500")
-                : isPending
-                  ? "pending"
-                  : ("text-black")
-            } to="/details">Estate</NavLink></li>
 
 
             <li><NavLink className={({ isActive, isPending }) =>
@@ -68,14 +61,19 @@ const Header = () => {
                   ? "pending"
                   : ("text-black")
             } to="/">User Profile</NavLink></li>
-
-            <li><NavLink className={({ isActive, isPending }) =>
+{/* 
+           {
+            !user ? <div>
+               <li><NavLink className={({ isActive, isPending }) =>
               isActive
                 ? ("text-green-500")
                 : isPending
                   ? "pending"
                   : ("text-black")
             } to="/login">Login</NavLink></li>
+            </div>: <a className='mt-2' onClick={handleLogOut}>Logout</a>
+
+           } */}
           </ul>
         </div>
         <div className="navbar-end dropdown dropdown-end flex justify-end">
