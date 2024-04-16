@@ -14,6 +14,7 @@ import AuthProvider from './components/providers/AuthProvider.jsx'
 import Estate from './components/Estate/Estate.jsx'
 import PrivateRoutes from './routes/PrivateRoutes.jsx'
 import Details from './components/Estate/Details.jsx';
+import PublicRoutes from './routes/PublicRoutes.jsx';
 
 const router = createBrowserRouter([
   {
@@ -28,7 +29,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/login',
-        element: <Login></Login>
+        element: <PublicRoutes><Login></Login></PublicRoutes>
 
       },
      
