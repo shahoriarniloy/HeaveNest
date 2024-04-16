@@ -86,7 +86,7 @@ const Header = () => {
               <div className='flex justify-center items-center'>
                
         
-               <div className="tooltip" data-tip={user.email}>
+               <div className="tooltip tooltip-bottom" data-tip={user.email}>
                   <div className="w-10 rounded-full " >
                     <img className="rounded-full" alt="Tailwind CSS Navbar component" src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
                  </div>

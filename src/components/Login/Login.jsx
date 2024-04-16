@@ -70,7 +70,7 @@ const Login = () => {
     };
 
     return (
-        <div>
+        <div className="max-w-[1400px] m-auto">
             <form onSubmit={handleLogin} className="flex flex-col  items-center h-screen">
                 <div className="w-1/2">
                     <label className="form-control">

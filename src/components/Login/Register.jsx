@@ -59,7 +59,7 @@ const Register = () => {
     }
 
     return (
-        <div>
+        <div className="max-w-[1400px] m-auto">
             <form onSubmit={handleRegister} className="flex flex-col justify-center items-center">
                 <label className="form-control w-1/2">
                     <div className="label">
