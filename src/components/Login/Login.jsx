@@ -40,8 +40,11 @@ const Login = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 const loggedInUser = result.user;
+                navigate('/');
+
                 
                 setUser(loggedInUser);
+
             })
             .catch(error => {
                 console.log('error', error.message);
@@ -62,6 +65,8 @@ const Login = () => {
         signInWithPopup(auth, githubProvider)
             .then(result => {
                 const loggedUser = result.user;
+                navigate('/');
+
                 setUser(loggedUser);
             })
             .catch(error => {

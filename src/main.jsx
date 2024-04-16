@@ -23,7 +23,7 @@ const router = createBrowserRouter([
       {
         path:'/',
         element: <Home></Home>,
-        loader:() => fetch('data.json').then(response => response.json())
+        loader:() => fetch('/data.json').then(response => response.json())
 
       },
       {
@@ -31,13 +31,14 @@ const router = createBrowserRouter([
         element: <Login></Login>
 
       },
+     
       {
         path:'/signup',
         element: <Register></Register>
       },
 
       {
-        path:'/details',
+        path:'/estate/:id',
         element: <PrivateRoutes><Details></Details></PrivateRoutes>
       }
     ]
