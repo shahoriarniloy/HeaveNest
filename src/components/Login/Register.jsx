@@ -15,6 +15,9 @@ const Register = () => {
         const email=e.target.email.value;
         const url=e.target.url.value;
         const password=e.target.password.value;
+
+       
+        console.log(email, password, name, url);
         const uppercaseRegex = /[A-Z]/;
         const lowercaseRegex = /[a-z]/;
         if(password.length <6){

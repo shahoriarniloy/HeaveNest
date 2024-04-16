@@ -13,6 +13,7 @@ import Register from './components/Login/Register.jsx'
 import AuthProvider from './components/providers/AuthProvider.jsx'
 import Estate from './components/Estate/Estate.jsx'
 import PrivateRoutes from './routes/PrivateRoutes.jsx'
+import Details from './components/Estate/Details.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,9 @@ const router = createBrowserRouter([
     children:[
       {
         path:'/',
-        element: <Home></Home>
+        element: <Home></Home>,
+        loader:() => fetch('data.json').then(response => response.json())
+
       },
       {
         path:'/login',
@@ -34,8 +37,8 @@ const router = createBrowserRouter([
       },
 
       {
-        path:'/estate',
-        element: <PrivateRoutes><Estate></Estate></PrivateRoutes>
+        path:'/details',
+        element: <PrivateRoutes><Details></Details></PrivateRoutes>
       }
     ]
   },

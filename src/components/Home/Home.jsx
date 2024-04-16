@@ -3,13 +3,16 @@ import 'swiper/css';
 import 'swiper/css/bundle';
 import 'swiper/css/pagination';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { useLoaderData } from 'react-router-dom';
+import Estate from '../Estate/Estate';
 
 
 const Home = () => {
-    
+    const residential = useLoaderData();
+   
 
     return (
-        <div>
+        <div className='max-w-[1400px] m-auto'>
            <Swiper  spaceBetween={30}
         centeredSlides={true}
         autoplay={{
@@ -54,6 +57,16 @@ Unlock the door to divine living with HeavensNest, where every home is a sanctua
                
             
            </Swiper>
+
+           <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4'>
+            {
+               residential.map(aResidential => <Estate 
+                key={aResidential.id} 
+                residential={aResidential}></Estate>)
+            }
+           </div>
+
+           
         </div>
     );
 };

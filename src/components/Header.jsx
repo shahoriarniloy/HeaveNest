@@ -50,7 +50,7 @@ const Header = () => {
                 : isPending
                   ? "pending"
                   : ("text-black")
-            } to="/estate">Estate</NavLink></li>
+            } to="/details">Estate</NavLink></li>
 
 
             <li><NavLink className={({ isActive, isPending }) =>

@@ -15,7 +15,8 @@ const Login = () => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
-        console.log(email);
+        
+        console.log(email, password);
 
         signInUser(email,password)
         .then(result =>{
@@ -39,6 +40,7 @@ const Login = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 const loggedInUser = result.user;
+                
                 setUser(loggedInUser);
             })
             .catch(error => {
@@ -116,7 +118,7 @@ const Login = () => {
                         <button onClick={handleGoogleSignOut} className="btn btn-red mt-0">Sign Out</button>
                     ) : (
                         <div>
-                            <h2 className="text-sm text-gray-600  mt-6 mb-4">Or, Sign In With:</h2>
+                            <h2 className="text-sm text-center text-gray-600  mt-6 mb-4">Or, Sign In With:</h2>
 
                             <button onClick={handleGoogleSignIn} className="btn btn-warning mr-4">Google Login</button>
                             <button onClick={handleGitHubSignIn} className="btn btn-warning">GitHub Login</button>

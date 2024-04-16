@@ -1,5 +1,7 @@
-{
-    "Residential": [
+[
+
+  
+    
       {
         "id": 1,
         "estate_title": "Luxury Villa with Ocean View",
@@ -9,18 +11,21 @@
         "status": "sale",
         "area": "4000 sq ft",
         "location": "Malibu, California",
-        "facilities": ["5 Bedrooms", "Infinity Pool", "Home Theater", "Gym"]
+        "facilities": ["5 Bedrooms", "Infinity Pool", "Home Theater", "Gym"],
+        "image":"./images/1.jpg"
       },
       {
         "id": 2,
-        "estate_title": "Cozy Beachfront Cottage",
+        "estate_title": "Cozy Beachfront House",
         "segment_name": "Residential",
         "description": "Charming cottage with direct access to a secluded beach, perfect for a peaceful retreat.",
         "price": "$800,000",
         "status": "rent",
         "area": "1200 sq ft",
         "location": "Outer Banks, North Carolina",
-        "facilities": ["2 Bedrooms", "Oceanfront Deck", "Fireplace", "Outdoor Shower"]
+        "facilities": ["2 Bedrooms", "Oceanfront Deck", "Fireplace", "Outdoor Shower"],
+        "image":"./images/2.jpg"
+
       },
       {
         "id": 3,
@@ -31,7 +36,9 @@
         "status": "sale",
         "area": "1800 sq ft",
         "location": "Downtown Manhattan, New York",
-        "facilities": ["Open Floor Plan", "City Views", "High Ceilings", "Fitness Center"]
+        "facilities": ["Open Floor Plan", "City Views", "High Ceilings", "Fitness Center"],
+        "image":"./images/3.jpg"
+
       },
       {
         "id": 4,
@@ -42,7 +49,9 @@
         "status": "rent",
         "area": "2500 sq ft",
         "location": "Austin, Texas",
-        "facilities": ["3 Bedrooms", "Spacious Kitchen", "Playroom", "Patio"]
+        "facilities": ["3 Bedrooms", "Spacious Kitchen", "Playroom", "Patio"],
+        "image":"./images/4.jpg"
+
       },
       {
         "id": 5,
@@ -53,7 +62,9 @@
         "status": "sale",
         "area": "1500 sq ft",
         "location": "Aspen, Colorado",
-        "facilities": ["2 Bedrooms", "Wood-burning Fireplace", "Deck", "Hiking Trails Nearby"]
+        "facilities": ["2 Bedrooms", "Wood-burning Fireplace", "Deck", "Hiking Trails Nearby"],
+        "image":"./images/5.jpg"
+
       },
       {
         "id": 6,
@@ -64,7 +75,9 @@
         "status": "sale",
         "area": "2200 sq ft",
         "location": "San Francisco, California",
-        "facilities": ["3 Bedrooms", "Rooftop Pool", "Concierge Service", "Private Balcony"]
+        "facilities": ["3 Bedrooms", "Rooftop Pool", "Concierge Service", "Private Balcony"],
+        "image":"./images/6.jpg"
+
       },
       {
         "id": 7,
@@ -75,7 +88,9 @@
         "status": "rent",
         "area": "6000 sq ft",
         "location": "Savannah, Georgia",
-        "facilities": ["5 Bedrooms", "Boat Dock", "Home Office", "Gardens"]
+        "facilities": ["5 Bedrooms", "Boat Dock", "Home Office", "Gardens"],
+        "image":"./images/7.jpg"
+
       },
       {
         "id": 8,
@@ -86,7 +101,9 @@
         "status": "sale",
         "area": "2800 sq ft",
         "location": "Brooklyn, New York",
-        "facilities": ["4 Bedrooms", "Original Details", "Gourmet Kitchen", "Private Garden"]
+        "facilities": ["4 Bedrooms", "Original Details", "Gourmet Kitchen", "Private Garden"],
+        "image":"./images/8.jpeg"
+
       },
       {
         "id": 9,
@@ -97,8 +114,9 @@
         "status": "rent",
         "area": "3200 sq ft",
         "location": "Scottsdale, Arizona",
-        "facilities": ["4 Bedrooms", "Large Yard", "Home Office", "Outdoor Kitchen"]
+        "facilities": ["4 Bedrooms", "Large Yard", "Home Office", "Outdoor Kitchen"],
+        "image":"./images/9.jpeg"
+
       }
-    ]
-  }
-  
+    
+]
