@@ -52,7 +52,7 @@ const Header = () => {
                 : isPending
                   ? "pending"
                   : ("text-black")
-            } to="/">Update Profile</NavLink></li>
+            } to="/profile">Update Profile</NavLink></li>
 
             <li><NavLink className={({ isActive, isPending }) =>
               isActive
@@ -60,7 +60,7 @@ const Header = () => {
                 : isPending
                   ? "pending"
                   : ("text-black")
-            } to="/">User Profile</NavLink></li>
+            } to="/profile">User Profile</NavLink></li>
 {/* 
            {
             !user ? <div>

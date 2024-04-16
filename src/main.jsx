@@ -15,6 +15,7 @@ import Estate from './components/Estate/Estate.jsx'
 import PrivateRoutes from './routes/PrivateRoutes.jsx'
 import Details from './components/Estate/Details.jsx';
 import PublicRoutes from './routes/PublicRoutes.jsx';
+import Profile from './components/profile/Profile.jsx';
 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,11 @@ const router = createBrowserRouter([
       {
         path:'/signup',
         element: <Register></Register>
+      },
+      
+      {
+        path:'/profile',
+        element: <PrivateRoutes><Profile></Profile></PrivateRoutes> 
       },
 
       {
