@@ -7,8 +7,12 @@ import auth from "../../firebase/firebase.init";
 import { AuthContext } from "../providers/AuthProvider";
 import { useContext } from "react";
 
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+
+
+
+const signInSuccess =() => toast.success("Signed In Successfully");
 const Login = () => {
 
     const location = useLocation();
@@ -20,26 +24,20 @@ const Login = () => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
-        
-        console.log(email, password);
+        console.log(email);
 
         signInUser(email,password)
         .then(result =>{
             console.log(result.user);
+            toast.success("Signed In");
+
             e.target.reset();
             navigate(location?.state?location.state:'/');
-            toast("Successfully Logged In");
-
-
         })
-        .catch(error=> {
-            toast.error("Invalid email or password");
-            console.error(error)
-        })
+        .catch(error=> console.error(error))
 
 
     }
-
    
     const [showPassword, setShowPassword] = useState(false);
     const [user, setUser] = useState(null);
@@ -50,16 +48,16 @@ const Login = () => {
     const handleGoogleSignIn = () => {
         signInWithPopup(auth, googleProvider)
             .then(result => {
+                toast.success("Signed In");
                 const loggedInUser = result.user;
                 navigate(location?.state?location.state:'/');
 
                 
                 setUser(loggedInUser);
-                toast("Successfully Logged In");
-
 
             })
             .catch(error => {
+                toast.error("Please check your credential or try again later ");
                 console.log('error', error.message);
             });
     };
@@ -67,29 +65,38 @@ const Login = () => {
     const handleGoogleSignOut = () => {
         signOut(auth)
             .then(() => {
+                toast.warning("Signed Out")
+
                 setUser(null);
             })
             .catch(error => {
                 console.log(error);
+                toast.error("Failed to sign out");
             });
     };
+    
 
     const handleGitHubSignIn = () => {
         signInWithPopup(auth, githubProvider)
             .then(result => {
+                toast.success("Signed In");
                 const loggedUser = result.user;
                 navigate(location?.state?location.state:'/');
 
+
                 setUser(loggedUser);
+
             })
             .catch(error => {
+                toast.error("Please check your credential or try again later ");
+
                 console.log(error);
             });
     };
 
     return (
-        <div className="max-w-[1400px] m-auto">
-            <form onSubmit={handleLogin} className="flex flex-col  items-center h-screen">
+        <div className="max-w-[1400px] mx-auto mb-0 h-fit">
+            <form onSubmit={handleLogin} className="flex flex-col  items-center h-fit">
                 <div className="w-1/2">
                     <label className="form-control">
                         <div className="label">
@@ -136,7 +143,7 @@ const Login = () => {
                         <button onClick={handleGoogleSignOut} className="btn btn-red mt-0">Sign Out</button>
                     ) : (
                         <div>
-                            <h2 className="text-sm text-center text-gray-600  mt-6 mb-4">Or, Sign In With:</h2>
+                            <h2 className="text-sm text-center text-gray-600  mt-6 mb-2">Or, Sign In With:</h2>
                             <div className="flex lg:flex-row md:flex-row sm:flex-col flex-col justify-center items-center gap-6"> 
                                 <button onClick={handleGoogleSignIn} className="btn btn-warning lg:mr-4 md:mr-4"><img className="w-12 h-auto" src="/images/google.png" alt="" style={{ width: "32px", height: "32px" }} />Google Login</button>
                                 <button onClick={handleGitHubSignIn} className="btn btn-warning"><img className="w-12 h-auto" src="/images/github.png" alt="" style={{ width: "32px", height: "32px" }}  />GitHub Login</button>
@@ -150,11 +157,10 @@ const Login = () => {
                         </div>
                     )}
                     <hr />
-                    <h2 className="text-sm text-gray-600  mt-6 mb-4">Or,</h2>
-                    <Link to="/signup"><button className="btn btn-primary w-60">Create New Account</button></Link>
+                    <h2 className="text-sm text-gray-600  mt-6 mb-2">Or,</h2>
+                    <Link to="/signup"><button className="btn btn-primary w-60 mb-8">Create New Account</button></Link>
 
             </form>
-            <ToastContainer />
 
 
 
@@ -163,3 +169,34 @@ const Login = () => {
 };
 
 export default Login;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

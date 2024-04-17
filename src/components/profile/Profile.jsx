@@ -1,6 +1,8 @@
 
 import { useContext, useState } from "react";
 import { AuthContext } from "../providers/AuthProvider";
+import {  toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Profile = () => {
   const { user, updateUserProfile } = useContext(AuthContext);
@@ -10,6 +12,9 @@ const Profile = () => {
   const handleSaveChanges = () => {
     updateUserProfile(name, photoURL)
       .then(() => {
+        toast.success("Profile updated successfully");
+
+        
         console.log("Profile updated successfully");
       })
       .catch((error) => {

@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProvider";
 import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import {  toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Register = () => {
 
     const location = useLocation();
@@ -47,6 +49,7 @@ const Register = () => {
         .then(result => {
             console.log(result.user);
             updateUserProfile(name, url); // Passing name and url to updateUserProfile
+            toast.success("Registered");
             navigate(location?.state ? location.state : '/');
         })
         .catch(error => {
@@ -108,7 +111,7 @@ const Register = () => {
                 <input type="submit" value="Create Account" className="btn btn-success w-60 text-white" />
 
                 <h2 className="text-sm text-gray-600  mt-6 mb-4">Or, Already Have an Account?</h2>
-                <Link to="/login"><button className="btn btn-primary w-60">Login</button></Link>
+                <Link to="/login"><button className="btn btn-primary w-60 mb-8">Login</button></Link>
 
             </form>
 

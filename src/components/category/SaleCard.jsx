@@ -2,10 +2,12 @@ import { useLoaderData } from 'react-router-dom';
 import Sale from './Sale';
 
 
+
 const SaleCard = () => {
 
     const residential = useLoaderData();
     console.log('Res:',residential);
+
 
 
     return (
@@ -23,6 +25,8 @@ const SaleCard = () => {
                         ))
                 }
             </div>
+
+
 
             
         </div>
