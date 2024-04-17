@@ -6,7 +6,7 @@ const Sale = ({residential}) => {
     console.log(residential);
     const {estate_title, image, description, id}= residential;
     return (
-        <div className="max-w-[1400px] m-auto " data-aos="zoom-in-right"
+        <div className="max-w-[1400px] m-auto " data-aos="zoom-in"
         >
             <div className="card lg:w-96 md:w-96 sm:w-full bg-base-100 shadow-xl">
                 <figure className="px-10 pt-10 w-120 h-120">

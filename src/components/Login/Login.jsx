@@ -13,33 +13,46 @@ import { Helmet } from "react-helmet";
 
 
 
-const signInSuccess =() => toast.success("Signed In Successfully");
+
+
 const Login = () => {
+    
+
+
 
     const location = useLocation();
 
     const {signInUser} = useContext(AuthContext);
+    
     const navigate = useNavigate();
 
-    const handleLogin = e =>{
+    const handleLogin = e => {
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
         console.log(email);
+    
+        signInUser(email, password)
+            .then(result => {
+                console.log(result.user);
+                toast.success("Signed In");
+    
+                e.target.reset();
+                navigate(location?.state ? location.state : '/');
+            })
+            .catch(error => {
+                console.error(error);
 
-        signInUser(email,password)
-        .then(result =>{
-            console.log(result.user);
-            toast.success("Signed In");
+                toast.error("Invalid Credentials"); 
+                
+                navigate('/login');
 
-            e.target.reset();
-            navigate(location?.state?location.state:'/');
-        })
-        .catch(error=> console.error(error))
-
-
+            });
     }
-   
+
+    
+
+    
     const [showPassword, setShowPassword] = useState(false);
     const [user, setUser] = useState(null);
 

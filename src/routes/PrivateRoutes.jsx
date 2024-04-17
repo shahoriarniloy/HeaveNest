@@ -10,14 +10,21 @@ const PrivateRoutes = ({children}) => {
 
     if(loading)
     {
-        return <div className='flex flex-row justify-center items-center'><span className="loading loading-bars loading-xs"></span>
+        
+        return <div className='flex flex-row justify-center items-center'>
+
+        <span className="loading loading-bars loading-xs"></span>
         <span className="loading loading-bars loading-sm"></span>
         <span className="loading loading-bars loading-md"></span>
-        <span className="loading loading-bars loading-lg"></span></div>
+        <span className="loading loading-bars loading-lg"></span>
+        </div>
+        
     }
     if(user){
         return children;
     }
+
+    
 
     return (
         <>

@@ -43,7 +43,7 @@ const router = createBrowserRouter([
      
       {
         path:'/signup',
-        element: <Register></Register>
+        element: <PublicRoutes><Register></Register></PublicRoutes>
       },
       
       {

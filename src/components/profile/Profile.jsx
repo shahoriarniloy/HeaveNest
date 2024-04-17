@@ -13,7 +13,7 @@ const Profile = () => {
   const handleSaveChanges = () => {
     updateUserProfile(name, photoURL)
       .then(() => {
-        toast.success("Profile updated successfully");
+        alert("Profile updated successfully");
 
         
         console.log("Profile updated successfully");
