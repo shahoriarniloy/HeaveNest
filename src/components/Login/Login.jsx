@@ -6,6 +6,8 @@ import auth from "../../firebase/firebase.init";
 import { AuthContext } from "../providers/AuthProvider";
 import { useContext } from "react";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Login = () => {
 
     const location = useLocation();
@@ -25,8 +27,14 @@ const Login = () => {
             console.log(result.user);
             e.target.reset();
             navigate(location?.state?location.state:'/');
+            toast("Successfully Logged In");
+
+
         })
-        .catch(error=> console.error(error))
+        .catch(error=> {
+            toast.error("Invalid email or password");
+            console.error(error)
+        })
 
 
     }
@@ -46,6 +54,8 @@ const Login = () => {
 
                 
                 setUser(loggedInUser);
+                toast("Successfully Logged In");
+
 
             })
             .catch(error => {
@@ -126,9 +136,10 @@ const Login = () => {
                     ) : (
                         <div>
                             <h2 className="text-sm text-center text-gray-600  mt-6 mb-4">Or, Sign In With:</h2>
-
-                            <button onClick={handleGoogleSignIn} className="btn btn-warning mr-4">Google Login</button>
-                            <button onClick={handleGitHubSignIn} className="btn btn-warning">GitHub Login</button>
+                            <div className="flex lg:flex-row md:flex-row sm:flex-col flex-col justify-center items-center gap-6"> 
+                                <button onClick={handleGoogleSignIn} className="btn btn-warning lg:mr-4 md:mr-4"><img className="w-12 h-auto" src="/images/google.png" alt="" style={{ width: "32px", height: "32px" }} />Google Login</button>
+                                <button onClick={handleGitHubSignIn} className="btn btn-warning"><img className="w-12 h-auto" src="/images/github.png" alt="" style={{ width: "32px", height: "32px" }}  />GitHub Login</button>
+                            </div>
                         </div>
                     )}
 
@@ -142,6 +153,7 @@ const Login = () => {
                     <Link to="/signup"><button className="btn btn-primary w-60">Create New Account</button></Link>
 
             </form>
+            <ToastContainer />
 
 
 

@@ -6,11 +6,15 @@ import 'animate.css';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { useLoaderData } from 'react-router-dom';
 import Estate from '../Estate/Estate';
+import { Link } from 'react-router-dom';
+import Rent from '../category/Rent';
+
 
 
 
 
 const Home = () => {
+
     const residential = useLoaderData();
    
 
@@ -61,7 +65,7 @@ Unlock the door to divine living with HeavensNest, where every home is a sanctua
             
            </Swiper>
 
-           <h1 className='text-6xl text-purple-900 text-center  lg:mt-12 mt-8'>Our Residents</h1>
+           <h1 className='text-6xl text-purple-900 text-center  lg:mt-12 mb-6 mt-8'>Our Residential</h1>
 
            <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4'>
             {
@@ -70,6 +74,51 @@ Unlock the door to divine living with HeavensNest, where every home is a sanctua
                 residential={aResidential}></Estate>)
             }
            </div>
+
+
+
+<h1 className='text-4xl text-purple-800 text-center mt-8'>Rent or Sale?</h1>
+<p className='text-gray-600 text-center'>Explore By Your Preference!</p>
+           <div className='grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 mt-12'>
+           <div className="card w-full  col-span-2 h-64 bg-base-100 shadow-xl image-full">
+            <figure><img  src="/images/rent.jpg" style={{ width: "700px", height: "auto" }}  alt="Shoes" /></figure>
+            <div className="card-body">
+                <h2 className="card-title">Rents!</h2>
+                <p>Find your perfect rental home on our site. Explore apartments and houses for rent, tailored to you!</p>
+                <div className="card-actions justify-end">
+                <Link to="/rent"><button className="btn bg-white text-black w-60 animate__animated animate__shakeY">View Rents</button></Link>
+                </div>
+            </div>
+            </div>
+
+            <div className="card  w-full col-span-2  h-64 bg-base-100 shadow-xl image-full">
+            <figure><img  src="/images/sale.jpg" style={{ width: "700px", height: "auto" }}  alt="Shoes" /></figure>
+            <div className="card-body">
+                <h2 className="card-title">Sales!!</h2>
+                <p>Discover your dream home for sale on our platform. Explore a variety of properties, from charming cottages to luxurious estates, waiting for you!</p>
+                <div className="card-actions justify-end">
+                <Link to="/sale"><button className="btn bg-white text-black w-60 animate__animated animate__shakeY">View Sales</button></Link>
+                </div>
+            </div>
+            </div>
+
+
+
+
+
+
+           </div>
+          
+
+
+
+
+
+
+
+
+
+
 
            
         </div>

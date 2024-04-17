@@ -17,6 +17,10 @@ import Details from './components/Estate/Details.jsx';
 import PublicRoutes from './routes/PublicRoutes.jsx';
 import Profile from './components/profile/Profile.jsx';
 import ViewProfile from './components/profile/ViewProfile.jsx';
+import { ToastContainer } from 'react-toastify';
+import Rent from './components/category/Rent.jsx';
+import RentCard from './components/category/RentCard.jsx';
+import SaleCard from './components/category/SaleCard.jsx';
 
 const router = createBrowserRouter([
   {
@@ -55,6 +59,19 @@ const router = createBrowserRouter([
       {
         path:'/estate/:id',
         element: <PrivateRoutes><Details></Details></PrivateRoutes>
+      },
+
+      {
+        path:'/rent',
+        element: <PrivateRoutes><RentCard></RentCard></PrivateRoutes>,
+        loader:() => fetch('/data.json').then(response => response.json())
+
+      },
+      {
+        path:'/sale',
+        element: <PrivateRoutes><SaleCard></SaleCard></PrivateRoutes>,
+        loader:() => fetch('/data.json').then(response => response.json())
+
       }
     ]
   },
@@ -64,6 +81,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <AuthProvider>
       <RouterProvider router={router} />
+      <ToastContainer />
     </AuthProvider>
   </React.StrictMode>,
 )

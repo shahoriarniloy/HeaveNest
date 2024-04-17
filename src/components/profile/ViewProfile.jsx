@@ -17,11 +17,11 @@ const ViewProfile = () => {
 
 
 
-      <div className="card card-side bg-base-100 shadow-xl mt-6 lg:mt-20  border-purple-600">
+      <div className="card card-side bg-blue-100 shadow-xl mt-6 lg:mt-20 flex lg:flex-row md:flex-row flex-col gap-0 border-purple-600">
         <figure ><img src={user.photoURL} alt="ProfilePicture"/></figure>
             <div className="card-body mt-24">
                 <h2 className="card-title text-3xl">Name: {user.displayName}</h2>
-                <p className="text-2xl text-purple-500"><span className="text-black font-bold">Email: </span>{user.email}</p>
+                <p className="text-xl text-purple-500"><span className="text-black font-bold">Email: </span>{user.email}</p>
                 <div className="card-actions justify-end">
                 <Link to="/profile"  ><button className="btn btn-warning text-bold">Edit Profile</button></Link>
             </div>
