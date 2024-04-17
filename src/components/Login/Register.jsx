@@ -12,7 +12,9 @@ const Register = () => {
 
     const navigate = useNavigate();
 
-    const {createUser, updateUserProfile} =useContext(AuthContext);
+    const { updateUserProfile} =useContext(AuthContext);
+
+    // const {createUser, updateUserProfile} =useContext(AuthContext);
     const [registerError, setRegisterError]= useState('');
     const [showPassword, setShowPassword]= useState(false);
     const handleRegister = e => {

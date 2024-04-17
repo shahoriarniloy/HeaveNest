@@ -7,7 +7,6 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { useLoaderData } from 'react-router-dom';
 import Estate from '../Estate/Estate';
 import { Link } from 'react-router-dom';
-import Rent from '../category/Rent';
 
 
 

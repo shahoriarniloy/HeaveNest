@@ -1,7 +1,6 @@
-import React from 'react';
 import {Outlet} from 'react-router-dom';
 import Header from '../components/Header';
-import Home from '../components/Home/Home';
+import Footer from '../components/Footer';
 
 const Main = () => {
     return (
@@ -9,6 +8,7 @@ const Main = () => {
 
             <Header></Header>
             <Outlet></Outlet>
+            <Footer></Footer>
 
             
         </div>

@@ -1,4 +1,5 @@
-import { GoogleAuthProvider, GithubAuthProvider, signInWithPopup, signOut, signInWithEmailAndPassword } from "firebase/auth";
+import { GoogleAuthProvider, GithubAuthProvider, signInWithPopup, signOut} from "firebase/auth";
+// import { GoogleAuthProvider, GithubAuthProvider, signInWithPopup, signOut, signInWithEmailAndPassword } from "firebase/auth";
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaEye, FaEyeSlash } from "react-icons/fa";

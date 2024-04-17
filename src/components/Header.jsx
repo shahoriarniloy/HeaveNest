@@ -50,39 +50,56 @@ const Header = () => {
            
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl text-purple-500 font-bold">Heaven's Nest</a>
+          <a className="btn btn-ghost text-xl text-purple-500 font-bold">HeaveNest</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
-            <li><NavLink className={({ isActive, isPending }) =>
-              isActive
-                ? ("text-green-500")
-                : isPending
-                  ? "pending"
-                  : ("text-black")
-            } to="/">Home</NavLink></li>
+        <ul className="menu menu-horizontal px-1">
+  <li><NavLink className={({ isActive, isPending }) =>
+    isActive
+      ? ("text-green-500")
+      : isPending
+        ? "pending"
+        : ("text-black")
+  } to="/">Home</NavLink></li>
 
 <li><NavLink className={({ isActive, isPending }) =>
-              isActive
-                ? ("text-green-500")
-                : isPending
-                  ? "pending"
-                  : ("text-black")
-            } to="/user">User Profile</NavLink></li>
+    isActive
+      ? ("text-green-500")
+      : isPending
+        ? "pending"
+        : ("text-black")
+  } to="/rent">Rents</NavLink></li>
 
 
+<li><NavLink className={({ isActive, isPending }) =>
+    isActive
+      ? ("text-green-500")
+      : isPending
+        ? "pending"
+        : ("text-black")
+  } to="/sale">Sales</NavLink></li>
 
-            <li><NavLink className={({ isActive, isPending }) =>
-              isActive
-                ? ("text-green-500")
-                : isPending
-                  ? "pending"
-                  : ("text-black")
-            } to="/profile">Update Profile</NavLink></li>
+  {user && (
+    <>
+      <li><NavLink className={({ isActive, isPending }) =>
+        isActive
+          ? ("text-green-500")
+          : isPending
+            ? "pending"
+            : ("text-black")
+      } to="/user">User Profile</NavLink></li>
 
-            
+      <li><NavLink className={({ isActive, isPending }) =>
+        isActive
+          ? ("text-green-500")
+          : isPending
+            ? "pending"
+            : ("text-black")
+      } to="/profile">Update Profile</NavLink></li>
+    </>
+  )}
+</ul>
 
-          </ul>
         </div>
         <div className="navbar-end dropdown dropdown-end flex justify-end">
 

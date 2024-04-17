@@ -1,4 +1,3 @@
-import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Rent from './Rent';
 
@@ -13,7 +12,7 @@ const RentCard = () => {
 
         <div >
             <h1 className='text-3xl text-purple-900 text-center mt-8'>For Rent</h1>
-            <p className='text-center mt-4 text-green-500'>Grab the best deals mow!</p>
+            <p className='text-center mt-4 text-green-500'>Grab the best deals now!</p>
 
             <div className='grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4'>
                 {

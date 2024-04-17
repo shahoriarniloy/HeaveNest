@@ -11,14 +11,12 @@ import Home from './components/Home/Home.jsx'
 import Login from './components/Login/Login.jsx'
 import Register from './components/Login/Register.jsx'
 import AuthProvider from './components/providers/AuthProvider.jsx'
-import Estate from './components/Estate/Estate.jsx'
 import PrivateRoutes from './routes/PrivateRoutes.jsx'
 import Details from './components/Estate/Details.jsx';
 import PublicRoutes from './routes/PublicRoutes.jsx';
 import Profile from './components/profile/Profile.jsx';
 import ViewProfile from './components/profile/ViewProfile.jsx';
 import { ToastContainer } from 'react-toastify';
-import Rent from './components/category/Rent.jsx';
 import RentCard from './components/category/RentCard.jsx';
 import SaleCard from './components/category/SaleCard.jsx';
 
