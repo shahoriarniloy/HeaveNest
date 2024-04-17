@@ -1,8 +1,28 @@
-# React + Vite
+# Website Name: HeaveNest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live Link: [HeaveNest Live Site](https://heavensnest-2c328.web.app)
 
-Currently, two official plugins are available:
+- **Responsive Design**: HeaveNest is optimized for mobile, tablet, or desktop screens.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Login Options**: Users can log in via email, Google, or GitHub accounts.
+
+- **Registration Validation**: Ensure accurate data entry through registration form validation.
+
+- **Navbar Links**: Easily navigate with links to Home, Sales, Rents, User Profile & Update Profile.
+
+- **Active Navbar Routes**: Implemented active routes for smooth navigation.
+
+- **Residential Exploration**: Users can explore Residential properties based on their preferences (Rent or Sale).
+
+- **Protected Routes**: Access Sales, Rents, User Profile & Update Profile securely.
+
+- **Visibility on Navbar**: User Profile & Update Profile links are visible only after logging in.
+
+- **Homepage Information**: The homepage provides basic information about Residentials.
+
+- **Detailed Property View**: Click "View Property" to see detailed information about a Residential.
+
+## NPM Packages Used:
+1. AOS Package
+2. Swiper slider
+3. Animate.css
