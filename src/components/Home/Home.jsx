@@ -50,11 +50,11 @@ const Home = () => {
             </SwiperSlide>
 
             <SwiperSlide>
-                <div className="flex lg:flex-row flex-col  justify-center items-center max-w-[1400px] h-[554px] bg-neutral-100 rounded-3xl lg:p-20 mt-12 m-auto mb-16 lg:text-left text-center " style={{backgroundImage: "url('https://i.ibb.co/HnBBwfW/banner4.jpg')",
+                <div className="flex lg:flex-row flex-col  justify-center items-center max-w-[1400px] h-[554px] bg-neutral-100 rounded-3xl lg:p-20 mt-12 m-auto mb-16 lg:text-left text-center " style={{backgroundImage: "url('https://i.ibb.co/rdmpcpw/banner.jpg')",
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',  filter: 'brightness(0.9)'}}>
                     <div className="lg:ml-20">
-                        <h1 className=" text-white text-lg font-bold text-center bg-purple-900 rounded-lg p-12 sm:p-4 w-full">Where aspirations meet addresses, guiding you to heavenly homes amidst earthly landscapes. Discover the divine in every dwelling.</h1>
+                        <h1 className=" text-white text-lg font-bold text-center bg-purple-900 rounded-lg p-4 sm:p-4 w-full">Where aspirations meet addresses, guiding you to heavenly homes amidst earthly landscapes. Discover the divine in every dwelling.</h1>
                     </div>
                 </div>
                 
