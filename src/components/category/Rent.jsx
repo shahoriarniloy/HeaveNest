@@ -16,7 +16,7 @@ const Rent = ({residential}) => {
                     <h2 className="card-title">{estate_title}   </h2>
                     <p className="text-sm text-gray-700">{description}</p>
                     <div className="card-actions">
-                    <Link to={`/estate/${id}`} ><button className="btn bg-purple-700 text-white">See Details</button></Link>
+                    <Link to={`/estate/${id}`} ><button className="btn bg-purple-700 text-white">View Property</button></Link>
                     </div>
                 </div>
             </div>
