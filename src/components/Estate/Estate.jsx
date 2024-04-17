@@ -19,7 +19,6 @@ const Estate = ({residential}) => {
                 <div className="card-body items-center text-center">
                     <h2 className="card-title">{estate_title}   </h2>
                     <p className="text-sm text-gray-700">{description}</p>
-                    <p>{image}</p>
                     <div className="card-actions">
                     <Link to={`/estate/${id}`} ><button className="btn bg-purple-700 text-white">See Details</button></Link>
                     </div>
