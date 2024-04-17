@@ -37,7 +37,7 @@ const Home = () => {
         className="mySwiper" >
             <SwiperSlide>
                 <div className="flex lg:flex-row flex-col  justify-center items-center max-w-[1400px] h-[554px] bg-neutral-100 rounded-3xl lg:p-20 mt-12 m-auto mb-16 lg:text-left text-center " style={{
-    backgroundImage: "url('https://i.ibb.co/rdmpcpw/banner.jpg')",
+    backgroundImage: "url('https://i.ibb.co/r3B3cQB/banner6.jpg')",
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat', filter: 'brightness(0.9)'
 }}
@@ -50,7 +50,7 @@ const Home = () => {
             </SwiperSlide>
 
             <SwiperSlide>
-                <div className="flex lg:flex-row flex-col  justify-center items-center max-w-[1400px] h-[554px] bg-neutral-100 rounded-3xl lg:p-20 mt-12 m-auto mb-16 lg:text-left text-center " style={{backgroundImage: "url('https://i.ibb.co/jrvH3Kg/banner2.webp')",
+                <div className="flex lg:flex-row flex-col  justify-center items-center max-w-[1400px] h-[554px] bg-neutral-100 rounded-3xl lg:p-20 mt-12 m-auto mb-16 lg:text-left text-center " style={{backgroundImage: "url('https://i.ibb.co/HnBBwfW/banner4.jpg')",
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',  filter: 'brightness(0.9)'}}>
                     <div className="lg:ml-20">
@@ -61,12 +61,13 @@ const Home = () => {
             </SwiperSlide>
 
             <SwiperSlide>
-                <div className="flex lg:flex-row flex-col justify-center items-center max-w-[1400px] h-[554px] bg-neutral-100 rounded-3xl lg:p-20 mt-12 m-auto mb-16 lg:text-left text-center  " style={{backgroundImage: "url('https://i.ibb.co/jrvH3Kg/banner2.webp')",
+                <div className="flex lg:flex-row flex-col justify-center items-center max-w-[1400px] h-[554px] bg-neutral-100 rounded-3xl lg:p-20 mt-12 m-auto mb-16 lg:text-left text-center  " style={{backgroundImage: "url('https://i.ibb.co/pwz81sy/banner5.jpg')",
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat', filter: 'brightness(0.9)'}}>
                     <div className="lg:ml-20">
                         <h1 className=" text-white text-lg bg-orange-700 lg:p-12 md:p-12  sm:p-8 font-bold text-center rounded-lg  w-full ">Embark on a journey to discover heavenly abodes tailored to your desires.
 Unlock the door to divine living with HeavensNest, where every home is a sanctuary of serenity</h1>
+
                     </div>
                 </div>
                 
