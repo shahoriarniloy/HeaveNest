@@ -12,7 +12,7 @@
         "area": "4000 sq ft",
         "location": "Malibu, California",
         "facilities": ["5 Bedrooms", "Infinity Pool", "Home Theater", "Gym"],
-        "image":"/images/1.jpg"
+        "image":"https://i.ibb.co/dDFtT9Y/1.jpg"
       },
       {
         "id": 2,
@@ -24,7 +24,7 @@
         "area": "1200 sq ft",
         "location": "Outer Banks, North Carolina",
         "facilities": ["2 Bedrooms", "Oceanfront Deck", "Fireplace", "Outdoor Shower"],
-        "image":"/images/2.jpg"
+        "image":"https://i.ibb.co/LRhFGMw/2.jpg"
 
       },
       {
@@ -37,7 +37,7 @@
         "area": "1800 sq ft",
         "location": "Downtown Manhattan, New York",
         "facilities": ["Open Floor Plan", "City Views", "High Ceilings", "Fitness Center"],
-        "image":"/images/3.jpg"
+        "image":"https://i.ibb.co/4YmDXSt/3.jpg"
 
       },
       {
@@ -50,7 +50,7 @@
         "area": "2500 sq ft",
         "location": "Austin, Texas",
         "facilities": ["3 Bedrooms", "Spacious Kitchen", "Playroom", "Patio"],
-        "image":"/images/4.jpg"
+        "image":"https://i.ibb.co/SR18YD2/4.jpg"
 
       },
       {
@@ -63,7 +63,7 @@
         "area": "1500 sq ft",
         "location": "Aspen, Colorado",
         "facilities": ["2 Bedrooms", "Wood-burning Fireplace", "Deck", "Hiking Trails Nearby"],
-        "image":"/images/5.jpg"
+        "image":"https://i.ibb.co/H746fz2/5.jpg"
 
       },
       {
@@ -76,7 +76,7 @@
         "area": "2200 sq ft",
         "location": "San Francisco, California",
         "facilities": ["3 Bedrooms", "Rooftop Pool", "Concierge Service", "Private Balcony"],
-        "image":"/images/6.jpg"
+        "image":"https://i.ibb.co/1vPfgVN/6.jpg"
 
       },
       {
@@ -89,7 +89,7 @@
         "area": "6000 sq ft",
         "location": "Savannah, Georgia",
         "facilities": ["5 Bedrooms", "Boat Dock", "Home Office", "Gardens"],
-        "image":"/images/7.jpg"
+        "image":"https://i.ibb.co/sPgztjD/7.jpg"
 
       },
       {
@@ -102,7 +102,7 @@
         "area": "2800 sq ft",
         "location": "Brooklyn, New York",
         "facilities": ["4 Bedrooms", "Original Details", "Gourmet Kitchen", "Private Garden"],
-        "image":"/images/8.jpg"
+        "image":"https://i.ibb.co/N1YSZkV/8.jpg"
 
       },
       {
@@ -115,8 +115,10 @@
         "area": "3200 sq ft",
         "location": "Scottsdale, Arizona",
         "facilities": ["4 Bedrooms", "Large Yard", "Home Office", "Outdoor Kitchen"],
-        "image":"/images/9.jpg"
+        "image":"https://i.ibb.co/jrp1f4w/9.jpg"
 
       }
     
 ]
+
+

@@ -9,6 +9,7 @@ import { useContext } from "react";
 
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from "react-helmet";
 
 
 
@@ -96,6 +97,9 @@ const Login = () => {
 
     return (
         <div className="max-w-[1400px] mx-auto mb-0 h-fit">
+            <Helmet>
+                <title>Login</title>
+            </Helmet>
             <form onSubmit={handleLogin} className="flex flex-col  items-center h-fit">
                 <div className="w-1/2">
                     <label className="form-control">

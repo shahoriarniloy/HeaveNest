@@ -1,5 +1,6 @@
 import { useLoaderData } from 'react-router-dom';
 import Sale from './Sale';
+import { Helmet } from 'react-helmet';
 
 
 
@@ -13,6 +14,9 @@ const SaleCard = () => {
     return (
 
         <div >
+             <Helmet>
+                <title>Sales</title>
+            </Helmet>
             <h1 className='text-3xl text-purple-900 text-center mt-8'>For Sale</h1>
             <p className='text-center mt-4 text-green-500'>Grab the best deals now!</p>
 

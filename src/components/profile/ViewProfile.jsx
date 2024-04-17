@@ -2,6 +2,7 @@
 import { useContext} from "react";
 import { AuthContext } from "../providers/AuthProvider";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const ViewProfile = () => {
   const { user } = useContext(AuthContext);
@@ -12,6 +13,9 @@ const ViewProfile = () => {
 
   return (
     <div className="max-w-[1400px] m-auto">
+      <Helmet>
+                <title>View Profile</title>
+            </Helmet>
       <h1 className="text-center text-4xl text-purple-900 font-bold mt-4 lg:mt-12">Profile</h1>
     
 

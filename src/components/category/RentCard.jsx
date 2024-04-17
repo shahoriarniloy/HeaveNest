@@ -1,5 +1,6 @@
 import { useLoaderData } from 'react-router-dom';
 import Rent from './Rent';
+import { Helmet } from 'react-helmet';
 
 
 const RentCard = () => {
@@ -11,6 +12,9 @@ const RentCard = () => {
     return (
 
         <div >
+            <Helmet>
+                <title>Rents</title>
+            </Helmet>
             <h1 className='text-3xl text-purple-900 text-center mt-8'>For Rent</h1>
             <p className='text-center mt-4 text-green-500'>Grab the best deals now!</p>
 

@@ -3,6 +3,7 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../providers/AuthProvider";
 import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from "react-helmet";
 
 const Profile = () => {
   const { user, updateUserProfile } = useContext(AuthContext);
@@ -24,6 +25,9 @@ const Profile = () => {
 
   return (
     <div className="max-w-[1400px] m-auto">
+      <Helmet>
+                <title>Update Profile</title>
+            </Helmet>
       <h1 className="text-center text-4xl text-purple-900 ">Profile</h1>
       <form onSubmit={handleSaveChanges}>
       <label className="form-control">

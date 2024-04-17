@@ -8,6 +8,7 @@ import { useLocation } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from "react-helmet";
 const Register = () => {
 
     const location = useLocation();
@@ -73,6 +74,9 @@ const Register = () => {
 
     return (
         <div className="max-w-[1400px] m-auto">
+            <Helmet>
+                <title>Sign Up</title>
+            </Helmet>
             <form onSubmit={handleRegister} className="flex flex-col justify-center items-center">
                 <label className="form-control w-1/2">
                     <div className="label">

@@ -36,6 +36,7 @@ const Details = () => {
 
     return (
         <div className="max-w-[1400px] m-auto">
+           
 
 
 
@@ -46,6 +47,7 @@ const Details = () => {
                     <img src={estate.image} alt="picture"/>
                     </figure>
                 <div className="card-body grid grid-cols-1 gap-2">
+
                     <h2 className="card-title  ">{estate.estate_title}</h2>
                     <p className="mt-0 text-gray-600">{estate.segment_name}</p>
                     <p className="text-xl text-bold text-blue-800">{estate.price}</p>
