@@ -110,7 +110,7 @@ const Header = () => {
                
         
                <div className="tooltip tooltip-bottom" data-tip={user.displayName}>
-                  <div className="w-10 rounded-full " >
+                  <div className="w-10 h-10 rounded-full " >
                     <img className="rounded-full" alt="Profile Image" src={user? user.photoURL:  "https://static-00.iconduck.com/assets.00/profile-circle-icon-2048x2048-cqe5466q.png"}
  />
                  </div>
