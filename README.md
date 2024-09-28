@@ -4,7 +4,7 @@
 
 ## Live Link 2: [HeaveNest Live Site](https://heavennest.netlify.app)
 
-https://heavennest.netlify.app/
+
 
 - **Responsive Design**: HeaveNest is optimized for mobile, tablet, or desktop screens.
 
