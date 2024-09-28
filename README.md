@@ -2,7 +2,7 @@
 
 ## Live Link 1: [HeaveNest Live Site](https://heavensnest-2c328.web.app)
 
-## Live Link 2: [HeaveNest Live Site]([https://(https://heavennest.netlify.app/)
+## Live Link 2: [HeaveNest Live Site](https://(https://heavennest.netlify.app)
 
 https://heavennest.netlify.app/
 
