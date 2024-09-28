@@ -1,6 +1,10 @@
 # Website Name: HeaveNest
 
-## Live Link: [HeaveNest Live Site](https://heavensnest-2c328.web.app)
+## Live Link 1: [HeaveNest Live Site](https://heavensnest-2c328.web.app)
+
+## Live Link 2: [HeaveNest Live Site]([https://(https://heavennest.netlify.app/)
+
+https://heavennest.netlify.app/
 
 - **Responsive Design**: HeaveNest is optimized for mobile, tablet, or desktop screens.
 
